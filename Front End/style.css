@@ -1,0 +1,29 @@
+ul {
+    list-style: none;
+}
+
+#tabela {
+    text-align: center;
+}
+
+p {
+    font-size-adjust:unset;
+}
+
+h1
+{
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+button:focus {
+    cursor: pointer;
+}
+
+input {
+    margin: auto;
+}

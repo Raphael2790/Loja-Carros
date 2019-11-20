@@ -1,0 +1,17 @@
+{
+  "name": "projeto-loja-carros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Raphael Silveste",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^2.7.2",
+    "express": "^4.17.1"
+  }
+}
