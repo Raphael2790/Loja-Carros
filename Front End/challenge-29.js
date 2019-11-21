@@ -53,17 +53,33 @@
           if(this.readyState === 4) {
           var parseData = JSON.parse(get.responseText)
           console.log(parseData.length)
+          console.log(parseData)
           for (var i = 0 ; i < parseData.length; i++) {
             var $tabelaCarro = $('[data-js="tabela-carro"]').get()
+            console.log($tabelaCarro)
             var $renderTableRow = document.createElement('tr')
             var $renderTableData = document.createElement('td')
+            var $renderTableData2 = document.createElement('td')
+            var $renderTableData3 = document.createElement('td')
+            var $renderTableData4 = document.createElement('td')
+            var $renderTableData5 = document.createElement('td')
+            var $renderImage = document.createElement('img')
             
-        
-              var $renderImage = document.createElement('img')
-              $renderImage.setAttribute('src', parseData[i].image)
-              $renderTableData.appendChild($renderImage)
+            $renderImage.setAttribute('src', parseData[i].image)
+            $renderTableData.appendChild($renderImage)
+
+              $renderTableData2.textContent = parseData[i].brandModel
+              $renderTableData3.textContent = parseData[i].year
+              $renderTableData4.textContent = parseData[i].plate
+              $renderTableData5.textContent = parseData[i].color
+              
               $tabelaCarro.appendChild($renderTableRow)
+        
               $renderTableRow.appendChild($renderTableData)
+              $renderTableRow.appendChild($renderTableData2)
+              $renderTableRow.appendChild($renderTableData3)
+              $renderTableRow.appendChild($renderTableData4)
+              $renderTableRow.appendChild($renderTableData5)
             }
           }
           
